@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rada;
+    char symbol;
+
+    cout << "kolik řad?): ";
+    cin >> rada;
+
+    cout << "co chceš vytisknout: ";
+    cin >> symbol;
+
+    for (int i = 1; i <= rada; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << symbol;
+        }
+        cout << '\n';
+    }
+
+    return 0; 
+}
